@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import ExpensesReport from './ExpensesReport';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div className="mainContainer">
+      <h1>Expenses Reporter</h1>
+      <ExpensesReport/>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );

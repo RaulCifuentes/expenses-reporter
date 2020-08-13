@@ -1,68 +1,52 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## PayTM 60-90 min Front End Web Coding Challenge
 
-### `npm test`
+Create a web app to enter receipts into an expense report.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Requirements:
 
-### `npm run build`
+1. The expense report can have **up to 5 receipts**.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Each receipt should have a **description**, **amount** and **currency**.
+  - Any receipt can be entered in any of the supported currencies.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+3. Each receipt should show its **amount in CAD $**
+  - Get exchange rates from https://api.exchangeratesapi.io/latest?base=CAD
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. There should be a **total for the entire expense report, in CAD $**, which should be displayed at the bottom of all receipts.
 
-### `npm run eject`
+5. It should **prevent you from submitting a report totalling over $1,000 CAD**
+   - If the total amount of all receipts exceeds $1,000 CAD it should disable the submit button and display a message stating that the expense report limit has been exceeded.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+6. There should be a button to **submit the expense report**, which will log the receipt data to the browser's dev tool console.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Solution
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+I failed to deliver the solution in the expected 90 minutes time. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+I am just following the advice of the recruiter guy and complete it and send it anyway !!
 
-## Learn More
+So I took where I left and worked to complete it. Although there's still space to improvements, this is at least a working version.
+ 
+It's coded in React (from a CreateReactApp initial scaffold) using functional components. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The `ExpensesReport`  component represents the main entity/view of the problem domain
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+It's defined and exported in the `ExpensesReport.js` file. 
 
-### Code Splitting
+I defined other inner related components `ExpenseView` and `ExpensesTableView` that lives on same file. 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+The styling is using plain CSS for now. No need to use CSSModules or CSSinJS or other nicer fancier stuff.   
 
-### Analyzing the Bundle Size
+Here is a screenshot of running solution in my local env
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![Screenshot of delivered solution](public/paytm-code.png)
