@@ -33,9 +33,11 @@ Create a web app to enter receipts into an expense report.
 
 I failed to deliver the solution in the expected 90 minutes time. 
 
-I am just following the advice of the recruiter guy and complete it and send it anyway !!
+I am just following the advice of the recruiter guy about completing and sending it anyway !!
 
-So I took where I left and worked to complete it. Although there's still space to improvements, this is at least a working version.
+So I used some time to took from where I left and worked to complete it. 
+
+Although there's still space to improvements, this is at least a working version.
  
 It's coded in React (from a CreateReactApp initial scaffold) using functional components. 
 
